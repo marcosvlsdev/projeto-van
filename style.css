@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+.tipos {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tipos p {
+    background-color: orange;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    margin: 0 5px;
+}
+
+.principal {
+    background-image: url(img/van\ preta.jpeg);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.texto {
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 100%;
+    color: white;
+}
+
+.texto p {
+    margin: 10px;
+}
+
+.transportes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.transporte {
+    margin: 40px;
+    width: 70vw;
+    height: 350px;
+    text-align: center;
+    background-color: #e0e2d6;
+    box-shadow: 0ch 0 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.img1 {
+    background-image: url(img/van\ preta.jpeg);
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.img6 {
+    background-image: url(img/onibus.jpeg);
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.transporte a {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    color: #e0e2d6;
+}
+
+.transporte p {
+    margin: 10px;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    color: #e0e2d6;
+    padding: 20px;
+}
