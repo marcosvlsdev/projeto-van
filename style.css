@@ -40,6 +40,10 @@ header {
     color: white;
 }
 
+header h1 {
+    color: rgb(255, 165, 0);
+}
+
 header i {
     font-size: 2em;
     font-weight: 700;
@@ -118,6 +122,7 @@ header i:hover {
 .transportes h1 {
     margin-top: 20px;
     font-size: 2em;
+    color: rgb(255, 165, 0);
 }
 
 .transporte {
@@ -216,8 +221,16 @@ footer {
     margin-bottom: 30px;
 }
 
+.omega h2 {
+    font-size: 2em;
+}
+
+#tel i{
+    color: rgb(255, 165, 0);
+}
+
 .icones{
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
     color: white;
 }
 
@@ -271,15 +284,6 @@ footer {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-  }
-
-  .texto-sobre-imagem ul{
-    display: flex;
-    margin-top: 10px;
-  }
-
-  .texto-sobre-imagem li {
-    flex: auto;
   }
 
   .controller {
