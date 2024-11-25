@@ -55,6 +55,11 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
+  .omega {
+    flex-direction: column;
+    
+  }
+
   @media (min-width: 700px) {
     .nav-list a {
         font-size: 1.1em;
