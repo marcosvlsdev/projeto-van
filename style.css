@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
 }
 
 .whatsapp-button {
@@ -27,36 +26,52 @@
 }
 
 .whatsapp-button i {
-    font-size: 3em;
+    font-size: 5vh;
 }
 
-header {
-    background-color: rgb(1, 28, 54);
-    padding: 10px;
+nav {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    height: 70px;
+    background: white;
+    height: 80px;
+    color: #FF5500;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list a {
+    letter-spacing: 2px;
+    margin-left: 20px;
+    text-decoration: none;
     color: white;
-}
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding: 20px;
+  }
 
-header h1 {
-    color: rgb(255, 165, 0);
-}
-
-header i {
-    font-size: 2em;
-    font-weight: 700;
-    margin-right: 5px;
-    padding: 15px;
-    color: white;
-}
-
-header i:hover {
-    color: rgb(255, 165, 0);
-    border-bottom: 1px solid rgb(255, 165, 0);
-    transition: 0.5s;
-}
+  .nav-list a:hover {
+    border-bottom: 2px solid #FF5500;
+    color: #FF5500;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    transition: 0.3s;
+  }
 
 .tipos {
     display: flex;
@@ -64,10 +79,10 @@ header i:hover {
 }
 
 .tipos p {
-    background-color: rgb(255, 165, 0);
+    background-color: #FF5500;
     border-radius: 20px;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 2vh;
     margin-right: 5px;
     font-weight: bold;
 }
@@ -75,39 +90,38 @@ header i:hover {
 
 .principal {
     background-image: url(img/vanpretona.jpeg);
-    height: 60vh;
+    height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
+    font-family: "Inter", sans-serif;
 }
 
 .texto {
     background-color: rgba(0, 0, 0, 0.575);
     height: 100%;
     color: white;
-    padding: 20px;                                 
-    font-size: 1.2em;
+    padding: 20px;
 }
 
 .texto h1 {
-    margin: 50px 0;
-    font-size: 3em;
+    padding: 45px 0;
+    font-size: 6vh;
 }
 
-.texto a button{
-    margin-top: 10px;
-    border: 2px solid rgb(255, 165, 0);
+.texto a button {
+    border: 2px solid #FF5500;
     border-radius: 5px;
-    color: rgb(255, 165, 0);
+    color: #FF5500;
     font-weight: bold;
     padding: 20px;
     background-color: transparent;
-    font-size: 1.5em;
+    font-size: 3.5vh;
     transition: 0.3s;
 }
 
 .texto a button:hover {
-    background-color: rgb(255, 165, 0);
+    background-color: #FF5500;
     color: white;
     transition: 0.3s;
     transform: scale(0.95);
@@ -117,77 +131,67 @@ header i:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Inter", sans-serif;
 }
 
 .transportes h1 {
     margin-top: 20px;
     font-size: 2em;
-    color: rgb(255, 165, 0);
+    color: #FF5500;
 }
 
 .transporte {
-    max-width: 1000px;
-    min-width: 400px;
+    max-width: 800px;
+    min-width: 320px;
     width: 70vw;
     margin: 40px;
-    height: 350px;
+    height: 400px;
     text-align: center;
     background-color: #e0e2d6;
     box-shadow: 0ch 0 10px 0 rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    
     overflow: hidden;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .img1 {
     background-image: url(img/van\ preta.jpeg);
-    height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
 .img2 {
     background-image: url(img/van\ preta.jpeg);
-    height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
 .img3 {
     background-image: url(img/van\ preta.jpeg);
-    height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
 .img4 {
     background-image: url(img/van\ preta.jpeg);
     height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
 .img5 {
     background-image: url(img/van\ preta.jpeg);
-    height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
 .img6 {
     background-image: url(img/onibus.jpeg);
-    height: 60%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
 }
 
-.detalhes h2{
+.detalhes h2 {
     padding: 10px;
 
 }
@@ -196,115 +200,146 @@ header i:hover {
     padding: 10px;
 }
 
-.detalhes a button{
-    border: 2px solid rgb(255, 165, 0);
+.detalhes a button {
+    border: 2px solid #FF5500;
     padding: 10px;
     border-radius: 5px;
-    color: rgb(255, 165, 0);
+    color: #FF5500;
     font-weight: bold;
     background-color: transparent;
 }
 
 .detalhes a button:hover {
-    background-color: rgb(255, 165, 0);
+    background-color: #FF5500;
     color: #e0e2d6;
 }
 
+.detalhes i {
+    padding: 5px;
+}
+
 footer {
-    background-color: rgb(1, 28, 54);
+    background-color: rgb(22, 22, 22);
     text-align: center;
-    color: rgb(255, 165, 0);
+    color: white;
     padding: 15px 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .omega {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 
 .omega h2 {
-    font-size: 2em;
+    font-size: 2.5em;
+    padding: 5px;
 }
 
-#tel i{
-    color: rgb(255, 165, 0);
-}
-
-.icones{
-    margin: 20px 0 50px 0;
-    color: white;
+.icones {
+    padding: 0 50px;
 }
 
 .icones button {
-    border: 1px solid rgb(255, 165, 0);
-    border-radius: 50%;
-    color: rgb(255, 165, 0);
+    color: white;
+    background-color: transparent;
 }
 
 .icones button:hover {
-    background-color: rgb(255, 165, 0);
-    color: black;
+    color: #FF5500;
 }
 
-.icones i{
-    font-size: 2.5em;
+.icones i {
+    font-size: 3.5em;
+}
+
+.pagamento {
+    font-size: 2em;
 }
 
 #labdev {
-    color: white;
+    color: #FF5500;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* Carrossel */
 
+.fundo{
+    background-color: #e0e2d6;
+    width: 90%;
+    padding: px 0;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    border-radius: 10px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.322);
+    font-family: "Inter", sans-serif;
+}
+
 .carrosel-conteiner {
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     position: relative;
-    margin: 100px 0;
-  }
+    max-width: 750px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-  img {
+img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0; 
-    transition: opacity 1s ease-in-out; 
-  }
-  img.active {
-    opacity: 1; 
-  }
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+}
 
-  
-  .texto-sobre-imagem {
+img.active {
+    opacity: 1;
+}
+
+.texto-sobre-imagem {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     color: white;
-    font-size: 20px;
+    font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-  }
+    justify-content: center;
+}
 
-  .controller {
+.texto-sobre-imagem h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.controller {
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-  }
-  button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: transparent;
+}
+
+
+button {
+    background-color: transparent;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-  }
-  button i {
+}
+
+button i {
     font-size: 24px;
-  }
-
-
+}
 
 
