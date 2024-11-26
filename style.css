@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 .whatsapp-button {
@@ -37,7 +43,7 @@ nav {
     height: 80px;
     color: #FF5500;
     padding: 10px;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   
   .nav-list {
@@ -118,7 +124,18 @@ nav {
     background-color: transparent;
     font-size: 3.5vh;
     transition: 0.3s;
+    animation: tremer 0.3s;
+    animation-iteration-count: 4;
 }
+
+@keyframes tremer {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0px); } 
+ }
+
 
 .texto a button:hover {
     background-color: #FF5500;
@@ -207,6 +224,7 @@ nav {
     color: #FF5500;
     font-weight: bold;
     background-color: transparent;
+    transition: .5s;
 }
 
 .detalhes a button:hover {
@@ -217,52 +235,58 @@ nav {
 .detalhes i {
     padding: 5px;
 }
-
 footer {
-    background-color: rgb(22, 22, 22);
+    background-color: #222;
     text-align: center;
-    color: white;
-    padding: 15px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     font-family: "Montserrat", sans-serif;
 }
 
 .omega {
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .omega h2 {
-    font-size: 2.5em;
-    padding: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF5500;
 }
 
 .icones {
-    padding: 0 50px;
+    padding: 10px;
 }
 
 .icones button {
-    color: white;
+    color: #fff;
     background-color: transparent;
+    border: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .icones button:hover {
-    color: #FF5500;
+    opacity: 0.7;
 }
 
 .icones i {
-    font-size: 3.5em;
+    font-size: 1.8em;
+    margin: 0 10px;
 }
 
-.pagamento {
-    font-size: 2em;
+#pagamento {
+    font-size: 16px;
+    color: #ccc;
 }
 
 #labdev {
-    color: #FF5500;
-    font-weight: bold;
-    font-size: 1.2em;
+    color: #999;
+    font-weight: normal;
+    font-size: 1em;
 }
 
 /* Carrossel */
@@ -272,7 +296,8 @@ footer {
     width: 90%;
     padding: px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 60px 0;
     border-radius: 10px;
     box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.322);
@@ -280,13 +305,14 @@ footer {
 }
 
 .carrosel-conteiner {
-    width: 100%;
+    width: 50%;
     height: 35vh;
     position: relative;
     max-width: 750px;
     border-radius: 10px;
     overflow: hidden;
 }
+
 
 img {
     width: 100%;
