@@ -89,13 +89,13 @@
     }
 
     .texto h1{
-        font-size: 6em;
+        font-size: 6vw;
         width: 70vw;
-        padding: 150px 0;
+        padding: 45px 0 80px 0;
     }
 
     .principal {
-        height: 90vh;
+        height: 50vw;
         background-position: center center;
         background-size: cover;
     }
@@ -103,10 +103,8 @@
     .principal a button {
       font-weight: bold;
       padding: 35px;
-      font-size: 4.5vh;
+      font-size: 2vw;
   }
-
-  
 
     .fundo{
         background-color: #e0e2d6;
@@ -133,6 +131,7 @@
       text-align: center;
       width: 50%;
       padding: 5px 20px;
+      font-size: 1.4em;
     }
 
     .transporte {
