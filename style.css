@@ -3,7 +3,7 @@
 
 body,html {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -281,8 +281,8 @@ footer {
 
 .fundo{
     background-color: #e0e2d6;
-    width: 95%;
-    padding: 60px 20px;
+    width: 90%;
+    padding: 60px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
