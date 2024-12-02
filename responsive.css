@@ -1,9 +1,6 @@
 /* 500px aumenta img vans e tamanho dos cards */
 
 @media (max-width: 750px) {
-    body {
-      overflow-x: hidden;
-    }
 
     .nav-list {
       position: absolute;
