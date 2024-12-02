@@ -1,3 +1,5 @@
+/* 500px aumenta img vans e tamanho dos cards */
+
 @media (max-width: 750px) {
     body {
       overflow-x: hidden;
@@ -77,9 +79,19 @@
       width: 600px;
     }
 
+    .img-carousel {
+      height: 50%; 
+    }
+
+    .transporte {
+      height: 600px;
+    }
+
   }
 
   @media(min-width: 1000px){
+    
+
     nav{
         justify-content: space-between;
     }
@@ -107,7 +119,6 @@
   }
 
     .fundo{
-        background-color: #e0e2d6;
         width: 90vw;
         padding: 60px 20px;
         display: flex;
@@ -115,7 +126,6 @@
         justify-content: space-between;
         margin: 60px 0;
         border-radius: 10px;
-        box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.322);
     }
     
     .carrosel-conteiner {
@@ -135,13 +145,9 @@
     }
 
     .transporte {
-        height: 600px;
-    }
-
-    .img1, .img2, .img3, .img4, .img5, .img6 {
-        background-position: center center;
-    }
-
+      width: 55vw;
+  }
+    
     .omega {
       flex-direction: row;
     }
@@ -159,7 +165,44 @@
       font-size: 1.1em;
     }
 
-    .detalhes p {
-      padding: 40px 0;
+    
+
+
+    
   }
+
+  @media(min-width:1200px) {
+    .flex {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .img-carousel {
+    height: 17vw; 
+  }
+
+  .transporte {
+    height: 33vw;
+    width: 27vw;
+  }
+
+  .detalhes ul {
+    columns: 2;
+    font-size: 0.9em;
+    padding: 20px 0;
+  }
+  }
+
+  @media (min-width:1400px) {
+    .detalhes ul {
+      font-size: 1em;
+      padding: 30px 0;
+    }
+  }
+
+  @media (min-width:1500px) {
+    .detalhes ul {
+      font-size: 1.2em;
+      padding: 35px 0;
+    }
   }

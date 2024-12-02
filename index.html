@@ -11,12 +11,11 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 </head>
 
 <body>
-    <a href="https://wa.me/seuNumero" class="whatsapp-button" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
     <header>
         <nav>
           <h1>Ômega Tour</h1>
@@ -26,9 +25,9 @@
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Nossas Vans</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#veiculos">Nossas Vans</a></li>
+            <li><a href="#sobrenos">Sobre Nós</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </nav>
@@ -36,7 +35,7 @@
 
     <script src="menu.js"></script>
     <main>
-        <section class="principal" id="ome">
+        <section class="principal" id="home">
             <div class="texto">
                 <div class="tipos">
                     <p>
@@ -56,59 +55,68 @@
     </main>
     <section class="transportes">
         <h1 id="veiculos">Nossos Veículos</h1>
-        <div class="transporte">
-            <div class="img1"></div>
-            <div class="detalhes">
-                <h2>van</h2>
-                <ul>
-                    <li>
-                        <p><i class="fa-solid fa-person"></i> 20 lugares</p>
-                    </li>
-                </ul>
-                <a href=""><button>solicitar orçamento</button></a>
+        <div class="flex">
+            <div class="transporte">
+                <div class="img-carousel">
+                    <img src="img/van-roberto.jpeg" alt="Ônibus 1" class="active">
+                    <img src="img/van-berto.jpeg" alt="Ônibus 2">
+                    <div class="carousel-controller">
+                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="detalhes">
+                    <h2>Van</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-person"></i>16 lugares</li>
+                        <li><i class="fa-regular fa-snowflake"></i>Ar-Condicionado</li>
+                        <li><i class="fa-solid fa-tv"></i>Televisão</li>
+                    </ul>
+                    <a href=""><button>Solicitar Orçamento</button></a>
+                </div>
+            </div>
+            <div class="transporte">
+                <div class="img-carousel">
+                    <img src="img/van-valcemir.jpeg" alt="Ônibus 1" class="active">
+                    <img src="img/van-cemir.jpeg" alt="Ônibus 2">
+                    <div class="carousel-controller">
+                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="detalhes">
+                    <h2>Van</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-person"></i>15 lugares</li>
+                        <li><i class="fa-regular fa-snowflake"></i>Ar-Condicionado</li>
+                        <li><i></i>Frigobar</li>
+                    </ul>
+                    <a href=""><button>Solicitar Orçamento</button></a>
+                </div>
+            </div>
+            <div class="transporte">
+                <div class="img-carousel">
+                    <img src="img/onibus-igreja.jpeg" alt="Ônibus 1" class="active">
+                    <img src="img/onibus.jpeg" alt="Ônibus 2">
+                    <img src="img/interno-onibus.jpeg" alt="Ônibus 3">
+                    <div class="carousel-controller">
+                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="detalhes">
+                    <h2>Ônibus Executivo</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-person"></i>50 lugares</li>
+                        <li><i class="fa-regular fa-snowflake"></i>Ar-Condicionado</li>
+                        <li><i class="fa-solid fa-tv"></i>Televisão</li>
+                        <li>Banheiro</li>
+                    </ul>
+                    <a href=""><button>Solicitar Orçamento</button></a>
+                </div>
             </div>
         </div>
-        <div class="transporte">
-            <div class="img2"></div>
-            <div class="detalhes">
-                <h2>van</h2>
-                <p><i class="fa-solid fa-person"></i>20 lugares</p>
-                <a href=""><button>Solicitar Orçamento</button></a>
-            </div>
-        </div>
-        <div class="transporte">
-            <div class="img3"></div>
-            <div class="detalhes">
-                <h2>van</h2>
-                <p><i class="fa-solid fa-person"></i>20 lugares</p>
-                <a href=""><button>Solicitar Orçamento</button></a>
-            </div>
-        </div>
-        <div class="transporte">
-            <div class="img4"></div>
-            <div class="detalhes">
-                <h2>van</h2>
-                <p><i class="fa-solid fa-person"></i>20 lugares</p>
-                <a href=""><button>Solicitar Orçamento</button></a>
-            </div>
-        </div>
-        <div class="transporte">
-            <div class="img5"></div>
-            <div class="detalhes">
-                <h2>van</h2>
-                <p><i class="fa-solid fa-person"></i>20 lugares</p>
-                <a href=""><button>Solicitar Orçamento</button></a>
-            </div>
-        </div>
-        <div class="transporte">
-            <div class="img6"></div>
-            <div class="detalhes">
-                <h2>Onibus</h2>
-                <p><i class="fa-solid fa-person"></i>40 lugares</p>
-                <a href=""><button>Solicitar Orçamento</button></a>
-            </div>
-        </div>
-        <div class="fundo">
+        <div class="fundo" id="sobrenos">
             <div class="carrosel-conteiner">
                 <img id="img0" src="img/pexels-annamw-1047442.jpg" alt="Imagem 1" class="active">
                 <div class="texto-sobre-imagem">
@@ -138,13 +146,9 @@
             </div>
         </div>
         
-
-        
         <!-- carrosel -->
     </section>
-    <section class="sobrenos">
-
-    </section>
+    
     <footer>
         <div class="omega">
             <h2>Ômega Tour</h2>
@@ -153,8 +157,6 @@
                             class="fa-brands fa-instagram"></i></button></a>
                 <a href="mailto:Valcemircurisco@gmail.com" target="_blank"><button><i
                             class="fa-solid fa-envelope"></i></button></a>
-                <a href="tel:+5511999999999"><button><i class="fa-solid fa-phone"></i></button></a>
-                
             </div>
             <div class="pagamento">
                 <a href="#" id="footer-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
@@ -199,6 +201,7 @@
             </a>
         </p>
     </footer>
+    <script src="card.js"></script>
     <script src="script.js"></script>
 </body>
 
