@@ -1,55 +1,55 @@
 /* 500px aumenta img vans e tamanho dos cards */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+    header {
+      justify-content: space-around;
+    }
 
     .nav-list {
+      display: block;
       position: absolute;
       right: 0;
       top: 80px;
       width: 100%;
-      height: 65vh;
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(25px);
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-      overflow: hidden;
+      visibility: hidden;
+      z-index: 1000;
+      height: 65vh;
     }
 
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
+    .nav-list a {
+      font-size: 1.5em;
+      color: white;
+  }
+
+  .nav-list a:hover {
+    border-bottom: 2px solid #FF5500;
+    color: #FF5500;
+  }
+    
     .mobile-menu {
       display: block;
     }
   }
   
-  .nav-list.active {
-    transform: translateX(0);
+  #nav.active .nav-list {
+    display: flex;
+    justify-content: space-around;
+    visibility: visible;
+    overflow-y: auto;
   }
   
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
+  #nav.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
   }
   
-  .mobile-menu.active .line2 {
+  #nav.active .line2 {
     opacity: 0;
   }
   
-  .mobile-menu.active .line3 {
+  #nav.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
@@ -60,11 +60,7 @@
 
 
   @media (min-width: 700px) {
-    .nav-list a {
-        font-size: 1.1em;
-        color: black;
-        padding: 25px 10px;
-    }
+    
 
     .principal h1 {
         padding: 60px 0;

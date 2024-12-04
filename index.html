@@ -16,15 +16,15 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-          <h1>Ômega Tour</h1>
-          <div class="mobile-menu">
+    <header id="header">
+        <h1>Ômega Tour</h1>
+        <nav id="nav">
+          <div class="mobile-menu" id="hamburguer" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
-          <ul class="nav-list">
+          <ul class="nav-list" id="menu" role="menu">
             <li><a href="#home">Início</a></li>
             <li><a href="#veiculos">Nossas Vans</a></li>
             <li><a href="#sobrenos">Sobre Nós</a></li>
@@ -58,8 +58,8 @@
         <div class="flex">
             <div class="transporte">
                 <div class="img-carousel">
-                    <img src="img/van-roberto.jpeg" alt="Ônibus 1" class="active">
-                    <img src="img/van-berto.jpeg" alt="Ônibus 2">
+                    <img src="img/van-roberto.jpeg" alt="Van Cinza de 16 lugares" class="active">
+                    <img src="img/van-berto.jpeg" alt="Van Cinza de 16 lugares">
                     <div class="carousel-controller">
                         <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
                         <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
@@ -77,8 +77,8 @@
             </div>
             <div class="transporte">
                 <div class="img-carousel">
-                    <img src="img/van-valcemir.jpeg" alt="Ônibus 1" class="active">
-                    <img src="img/van-cemir.jpeg" alt="Ônibus 2">
+                    <img src="img/van-valcemir.jpeg" alt="Van Cinza de 15 lugares com Frigobar" class="active">
+                    <img src="img/van-cemir.jpeg" alt="Van Cinza de 15 lugares com Frigobar">
                     <div class="carousel-controller">
                         <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
                         <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
@@ -96,9 +96,9 @@
             </div>
             <div class="transporte">
                 <div class="img-carousel">
-                    <img src="img/onibus-igreja.jpeg" alt="Ônibus 1" class="active">
-                    <img src="img/onibus.jpeg" alt="Ônibus 2">
-                    <img src="img/interno-onibus.jpeg" alt="Ônibus 3">
+                    <img src="img/onibus-igreja.jpeg" alt="Ônibus Executivo de 50 lugares, foto em frente a igreja" class="active">
+                    <img src="img/onibus.jpeg" alt="Ônibus de 50 lugares,foto na rua">
+                    <img src="img/interno-onibus.jpeg" alt="Ônibus Executivo por dentro">
                     <div class="carousel-controller">
                         <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
                         <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>

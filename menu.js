@@ -1,44 +1,16 @@
-class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
+const Hamburguer = document.getElementById("hamburguer")
 
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
-  }
-
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", this.handleClick);
-  }
-
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
-    }
-    return this;
+function toggleMenu(event) {
+  if (event.type === "touchstart") event.preventDefault();
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+  const active = nav.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active)
+  if (active) event.currentTarget.setAttribute("aria-label", "Fechar Menu")
+  else {
+  event.currentTarget.setAttribute("aria-label", "Abrir Menu")
   }
 }
 
-const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init();
+hamburguer.addEventListener("click", toggleMenu);
+hamburguer.addEventListener("touchstart", toggleMenu);
