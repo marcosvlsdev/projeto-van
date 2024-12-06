@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 
@@ -20,11 +21,11 @@ header {
     align-items: center;
     background: white;
     height: 80px;
-    color: #FF5500;
+    color: #FE7920;
     padding: 10px;
     font-family: "Inter", sans-serif;
   }
-  
+
   .nav-list {
     list-style: none;
     display: flex;
@@ -39,8 +40,8 @@ header {
   }
 
   .nav-list a:hover {
-    border-bottom: 2px solid #FF5500;
-    color: #FF5500;
+    border-bottom: 2px solid #FE7920;
+    color: #FE7920;
   }
   
   .mobile-menu {
@@ -62,7 +63,7 @@ header {
 }
 
 .tipos p {
-    background-color: #FF5500;
+    background-color: #FE7920;
     border-radius: 20px;
     padding: 10px;
     font-size: 2vh;
@@ -76,7 +77,7 @@ header {
     height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center left;
     font-family: "Inter", sans-serif;
 }
 
@@ -93,9 +94,9 @@ header {
 }
 
 .texto a button {
-    border: 2px solid #FF5500;
+    border: 2px solid #FE7920;
     border-radius: 5px;
-    color: #FF5500;
+    color: #FE7920;
     font-weight: bold;
     padding: 20px;
     background-color: transparent;
@@ -104,7 +105,7 @@ header {
 }
 
 .texto a button:hover {
-    background-color: #FF5500;
+    background-color: #FE7920;
     color: white;
     transition: 0.3s;
     transform: scale(0.95);
@@ -120,13 +121,13 @@ header {
 #veiculos {
     margin-top: 20px;
     font-size: 2em;
-    color: #FF5500;
+    color: #FE7920;
 }
 
 .transporte {
     max-width: 800px;
     min-width: 320px;
-    width: 70vw;
+    width: 72vw;
     margin: 40px;
     height: 500px;
     text-align: center;
@@ -140,6 +141,10 @@ header {
 .transporte:hover {
     transform: scale(1.05);
     transition: 0.5s;
+}
+
+#onibus .detalhes ul {
+    columns: 2;
 }
 
 /* Carrosssel */
@@ -172,21 +177,17 @@ header {
     justify-content: space-between;
     transform: translateY(-50%);
     background: transparent;
+    
   }
 
-
-
-button {
+  .carousel-controller button {
     background-color: transparent;
-    color: white;
+    color: black;
     border: none;
     padding: 10px;
     cursor: pointer;
-}
-
-button i {
     font-size: 24px;
-}
+  }
 
 .detalhes h2 {
     padding: 10px;
@@ -202,10 +203,10 @@ button i {
 }
 
 .detalhes a button {
-    border: 2px solid #FF5500;
+    border: 2px solid #FE7920;
     padding: 15px;
     border-radius: 5px;
-    color: #FF5500;
+    color: #FE7920;
     font-weight: 700;
     background-color: transparent;
     
@@ -213,14 +214,14 @@ button i {
 }
 
 .detalhes a button:hover {
-    background-color: #FF5500;
+    background-color: #FE7920;
     color: #e0e2d6;
 }
 
 .detalhes li {
     display: flex;
     justify-content: center;
-    padding: 2px;
+    padding: 5px;
 }
 
 .detalhes i {
@@ -229,7 +230,6 @@ button i {
 
 footer {
     background-color: rgb(22, 22, 22);
-    text-align: center;
     color: white;
     padding: 15px 20px;
     font-family: "Montserrat", sans-serif;
@@ -243,34 +243,54 @@ footer {
 }
 
 .omega h2 {
-    font-size: 2.5em;
-    padding: 5px;
+    font-size: 3em;
+    padding: 5px 0;
+}
+
+.omega img {
+    padding-bottom: 15px;
+}
+
+.empresa li, .empresa a, .icones li, .icones a{
+    padding: 7px 0;
+    color: white;
 }
 
 .icones {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
-.icones button {
-    color: white;
+.icones a {
     background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.icones button:hover {
-    color: #FF5500;
+.icones a:hover {
+    color: #FE7920;
 }
 
 .icones i {
-    font-size: 3em;
-    padding: 0 10px;
+    font-size: 2.5em;
+    padding-right: 10px;
+    
 }
 
 .pagamento {
     font-size: 2em;
 }
 
+footer p {
+    text-align: center;
+    line-height: 1.5em;
+}
+
 #labdev {
-    color: #FF5500;
+    color: #FE7920;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -306,7 +326,7 @@ footer {
     font-size: 1.2em;
 }
 
-img {
+.carrosel-conteiner img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -316,7 +336,7 @@ img {
     transition: opacity 0.75s ease-in-out;
 }
 
-img.active {
+.carrosel-conteiner img.active {
     opacity: 1;
 }
 
@@ -348,7 +368,7 @@ img.active {
 }
 
 
-button {
+.controller button {
     background-color: transparent;
     color: white;
     border: none;
@@ -356,7 +376,7 @@ button {
     cursor: pointer;
 }
 
-button i {
+.controller button i {
     font-size: 24px;
 }
 
