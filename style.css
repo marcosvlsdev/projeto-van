@@ -13,7 +13,9 @@ body {
     list-style: none;
 }
 
-
+button {
+    cursor: pointer;
+}
 
 header {
     display: flex;
@@ -53,13 +55,12 @@ header {
     width: 32px;
     height: 2px;
     background: black;
-    margin: 8px;
+    margin: 8px 0;
     transition: 0.3s;
   }
 
 .tipos {
     display: flex;
-    margin-bottom: 15px;
 }
 
 .tipos p {
@@ -89,7 +90,7 @@ header {
 }
 
 .texto h1 {
-    padding: 45px 0;
+    padding: 30px 0 50px 0;
     font-size: 6vh;
 }
 
@@ -100,7 +101,7 @@ header {
     font-weight: bold;
     padding: 20px;
     background-color: transparent;
-    font-size: 3.5vh;
+    font-size: 3vh;
     transition: 0.3s;
 }
 
@@ -128,11 +129,10 @@ header {
     max-width: 800px;
     min-width: 320px;
     width: 72vw;
-    margin: 40px;
+    margin: 40px 0;
     height: 500px;
     text-align: center;
     background-color: #e0e2d6;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.42);
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
