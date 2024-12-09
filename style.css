@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     width: 100%;
@@ -120,9 +121,9 @@ header {
 }
 
 #veiculos {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 2em;
-    color: #FE7920;
+    font-family: "Libre Baskerville", serif;
 }
 
 .transporte {
@@ -300,7 +301,7 @@ footer p {
 .fundo{
     background-color: #e0e2d6;
     width: 90%;
-    padding: 60px 10px;
+    padding: 30px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,7 +324,17 @@ footer p {
 .sobrenos {
     text-align: center;
     padding: 20px 5px;
-    font-size: 1.2em;
+}
+
+.sobrenos h1 {
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.sobrenos a {
+    color: #FE7920;
+    font-weight: bold;
 }
 
 .carrosel-conteiner img {
