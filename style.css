@@ -20,7 +20,7 @@ button {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: white;
     height: 80px;
