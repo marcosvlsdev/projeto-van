@@ -75,7 +75,7 @@ header {
 
 
 .principal {
-    background-image: url(img/vanpretona.jpeg);
+    background-image: url(img/vanpretona2.jpeg);
     height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,18 +97,19 @@ header {
 
 .texto a button {
     border: 2px solid #FE7920;
+    background-color: #FE7920;
     border-radius: 5px;
-    color: #FE7920;
+    color: white;
     font-weight: bold;
     padding: 20px;
-    background-color: transparent;
     font-size: 3vh;
     transition: 0.3s;
 }
 
 .texto a button:hover {
-    background-color: #FE7920;
-    color: white;
+    color: #FE7920;
+    background-color: transparent;
+    border: 2px solid #FE7920;
     transition: 0.3s;
     transform: scale(0.95);
 }
@@ -133,7 +134,7 @@ header {
     margin: 40px 0;
     height: 500px;
     text-align: center;
-    background-color: #e0e2d6;
+    background-color: #E7E4E4;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
@@ -216,7 +217,7 @@ header {
 
 .detalhes a button:hover {
     background-color: #FE7920;
-    color: #e0e2d6;
+    color: #E7E4E4;
 }
 
 .detalhes li {
@@ -232,20 +233,21 @@ header {
 footer {
     background-color: rgb(22, 22, 22);
     color: white;
-    padding: 15px 20px;
+    padding: 15px;
     font-family: "Montserrat", sans-serif;
 }
 
 .omega {
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
+    justify-content: space-around;
+    padding: 20px 40px;
 }
 
 .omega h2 {
     font-size: 3em;
     padding: 5px 0;
+    color: #FE7920;
 }
 
 .omega img {
@@ -253,7 +255,7 @@ footer {
 }
 
 .empresa li, .empresa a, .icones li, .icones a{
-    padding: 7px 0;
+    padding: 5px 0;
     color: white;
 }
 
@@ -271,18 +273,14 @@ footer {
     text-decoration: none;
 }
 
-.icones a:hover {
+.icones a:hover, .empresa a:hover {
     color: #FE7920;
 }
 
 .icones i {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-right: 10px;
     
-}
-
-.pagamento {
-    font-size: 2em;
 }
 
 footer p {
@@ -299,7 +297,7 @@ footer p {
 /* Carrossel */
 
 .fundo{
-    background-color: #e0e2d6;
+    background-color: #E7E4E4;
     width: 90%;
     padding: 30px 10px;
     display: flex;
