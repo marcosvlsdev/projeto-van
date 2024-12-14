@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aluguel de vans e ônibus com motoristas para a ocasião que você precisa. Garanta segurança, conforto e qualidade no seu trajeto com a Ômega Tour.">
     <title>Ômega Tour | Aluguel Vans e Ônibus com motorista</title>
-    <link rel="shortcut icon" href="img/miniomega.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/omegafavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -20,12 +20,12 @@
     <header id="header">
         <img src="img/omegatourlogo1.png" alt="">
         <nav id="nav">
-          <div class="mobile-menu" id="hamburguer" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
+          <div class="mobile-menu" id="hamburguer">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
-          <ul class="nav-list" id="menu" role="menu">
+          <ul class="nav-list" id="menu">
             <li><a href="#home">Início</a></li>
             <li><a href="#veiculos">Nossas Vans</a></li>
             <li><a href="#sobrenos">Sobre Nós</a></li>
@@ -41,7 +41,7 @@
                 <h1>
                     Aluguel de Vans com motorista em São Paulo.
                 </h1>
-                <a href="#veiculos"><button>Solicitar Orçamento</button></a>
+                <a href="#veiculos"><button role="button" aria-label="Solicitar Orçamento">Solicitar Orçamento</button></a>
             </div>
         </section>
     </main>
@@ -51,10 +51,11 @@
             <div class="transporte">
                 <div class="img-carousel">
                     <img src="img/van-roberto.jpeg" alt="Van Cinza de 16 lugares" class="active">
-                    <img src="img/van-berto.jpeg" alt="Van Cinza de 16 lugares">
+                    <img src="img/van-roberto2.jpeg" alt="Van Cinza de 16 lugares">
+                    <img src="img/vandentro1.jpeg" alt="Interno da Van Cinza de 16 lugares">
                     <div class="carousel-controller">
-                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
-                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                        <button onclick="prevOnibus(this)" id="card-btn" role="button" aria-label="Imagem Anterior"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right" role="button" aria-label="Próxima Imagem"></i></button>
                     </div>
                 </div>
                 <div class="detalhes">
@@ -64,16 +65,16 @@
                         <li><i class="fa-solid fa-temperature-low"></i>Ar-Condicionado</li>
                         <li><i class="fa-solid fa-tv"></i>Televisão</li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=5511991921817&text=Olá, gostaria de saber mais sobre a van de 16 lugares." target="_blank"><button>Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511991921817&text=Olá, gostaria de saber mais sobre a van de 16 lugares." target="_blank"><button role="button" aria-label="Solicitar Orçamento">Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
                 </div>
             </div>
             <div class="transporte">
                 <div class="img-carousel">
                     <img src="img/van-valcemir.jpeg" alt="Van Cinza de 15 lugares com Frigobar" class="active">
-                    <img src="img/van-cemir.jpeg" alt="Van Cinza de 15 lugares com Frigobar">
+                    <img src="img/van-valcemir2.jpeg" alt="Van Cinza de 15 lugares com Frigobar">
                     <div class="carousel-controller">
-                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
-                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                        <button onclick="prevOnibus(this)" id="card-btn" role="button" aria-label="Imagem Anterior"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" role="button" aria-label="Próxima Imagem"><i class="bi bi-caret-right"></i></button>
                     </div>
                 </div>
                 <div class="detalhes">
@@ -83,7 +84,7 @@
                         <li><i class="fa-solid fa-temperature-low"></i>Ar-Condicionado</li>
                         <li><i class="fa-solid fa-glass-water-droplet"></i>Frigobar</li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=5511959897067&text=Olá, gostaria de saber mais sobre a van de 15 lugares com frigobar." target="_blank"><button>Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511959897067&text=Olá, gostaria de saber mais sobre a van de 15 lugares com frigobar." target="_blank"><button role="button" aria-label="Solicitar Orçamento">Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
                 </div>
             </div>
             <div class="transporte" id="onibus">
@@ -92,8 +93,8 @@
                     <img src="img/onibus.jpeg" alt="Ônibus de 50 lugares,foto na rua">
                     <img src="img/interno-onibus.jpeg" alt="Ônibus Executivo por dentro">
                     <div class="carousel-controller">
-                        <button onclick="prevOnibus(this)" id="card-btn"><i class="bi bi-caret-left"></i></button>
-                        <button onclick="nextOnibus(this)" ><i class="bi bi-caret-right"></i></button>
+                        <button onclick="prevOnibus(this)" id="card-btn" role="button" aria-label="Imagem Anterior"><i class="bi bi-caret-left"></i></button>
+                        <button onclick="nextOnibus(this)" role="button" aria-label="Próxima Imagem"><i class="bi bi-caret-right"></i></button>
                     </div>
                 </div>
                 <div class="detalhes">
@@ -105,7 +106,7 @@
                         <li><i class="fa-solid fa-toilet"></i>Banheiro</li>
                         <li><i class="fa-solid fa-glass-water-droplet"></i> Geladeira de Água</li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=5511959897067&text=Olá gostaria de saber mais sobre o Ônibus Executivo." target="_blank"><button>Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511959897067&text=Olá gostaria de saber mais sobre o Ônibus Executivo." target="_blank"><button role="button" aria-label="Solicitar Orçamento">Solicitar Orçamento <i class="fa-brands fa-whatsapp"></i></button></a>
                 </div>
             </div>
         </div>
@@ -131,18 +132,18 @@
                 <div class="texto-sobre-imagem">
                     <h2>Aeroporto</h2>
                 </div>
-                <img id="img3" src="img/360_F_353743274_CrATPwddc5ib5c91OwWvihsecYv2YCea.jpg" alt="Foto de Aparecida do Norte">
+                <img id="img3" src="img/aparecida.jpg" alt="Foto de Aparecida do Norte">
                 <div class="texto-sobre-imagem">
                     <h2>Passeios Religiosos</h2>
                 </div>
                 <div class="controller">
-                    <button onclick="prevImg()"><i class="bi bi-caret-left"></i></button>
-                    <button onclick="nextImg()"><i class="bi bi-caret-right"></i></i></button>
+                    <button onclick="prevImg()" role="button" aria-label="Imagem Anterior"><i class="bi bi-caret-left"></i></button>
+                    <button onclick="nextImg()" role="button" aria-label="Próxima Imagem"><i class="bi bi-caret-right"></i></i></button>
                 </div>
             </div>
             <div class="sobrenos">
                 <h1>Sobre Nós</h1>
-                <p>Nós da <a href="https://www.instagram.com/omega.transporte/" target="_blank">Ômega Tour</a> trabalhamos há 4 anos anos com aluguel de vans e ônibus que atendem as necessidades e preferências dos clientes na região do estado de São Paulo, e principalmente na região do grande abc. Nosso compromisso vai além do simples transporte: <a href="#sobrenos">buscamos transformar cada viagem em uma experiência tranquila e prazerosa</a> proporcionando segurança, conforto e muita qualidade aos nossos clientes.
+                <p>Nós da <a href="https://www.instagram.com/omega.transporte/" target="_blank">Ômega Tour</a> trabalhamos há 4 anos anos com aluguel de vans e ônibus que atendem as necessidades e preferências dos clientes na região do estado de São Paulo, e principalmente na região do grande abc. Nosso compromisso vai além do simples transporte: <span>buscamos transformar cada viagem em uma experiência tranquila e prazerosa</span> proporcionando segurança, conforto e muita qualidade aos nossos clientes.
                     <a href="#contato">Entre em contato conosco</a> e tenha uma viagem realmente confortável e segura!</p>
             </div>
         </div>
@@ -153,7 +154,7 @@
     <footer id="footer">
         <div class="omega">
             <div class="empresa">
-                <img src="img/omegatourlogo4.png" alt="">
+                <img src="img/omegatourlogo2.png" alt="">
                 <ul>
                     <li><a href="#header">Início</a></li>
                     <li><a href="#veiculos">Nossos veículos</a></li>

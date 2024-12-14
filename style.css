@@ -29,6 +29,11 @@ header {
     font-family: "Inter", sans-serif;
   }
 
+  header img {
+    height: 70px;
+    width: 146px;
+  }
+
   .nav-list {
     list-style: none;
     display: flex;
@@ -75,7 +80,7 @@ header {
 
 
 .principal {
-    background-image: url(img/vanpretona2.jpeg);
+    background-image: url(img/vanpreta.jpeg);
     height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,8 +134,8 @@ header {
 
 .transporte {
     max-width: 800px;
-    min-width: 320px;
-    width: 72vw;
+    min-width: 300px;
+    width: 80vw;
     margin: 40px 0;
     height: 500px;
     text-align: center;
@@ -202,12 +207,12 @@ header {
     list-style: none;
     columns: 1;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .detalhes a button {
     border: 2px solid #FE7920;
-    padding: 15px;
+    padding: 15px 10px;
     border-radius: 5px;
     color: #FE7920;
     font-weight: 700;
@@ -257,6 +262,11 @@ footer {
 .empresa li, .empresa a, .icones li, .icones a{
     padding: 5px 0;
     color: white;
+}
+
+.empresa img {
+    width: 209px;
+    height: 100px;
 }
 
 .icones {
@@ -311,7 +321,7 @@ footer p {
 .carrosel-conteiner {
     width: 100%;
     height: 38vh;
-    max-height: 480px;
+    max-height: 500px;
     position: relative;
     max-width: 750px;
     border-radius: 10px;
@@ -331,6 +341,11 @@ footer p {
 }
 
 .sobrenos a {
+    color: #FE7920;
+    font-weight: bold;
+}
+
+.sobrenos span {
     color: #FE7920;
     font-weight: bold;
 }
