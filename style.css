@@ -111,14 +111,6 @@ header {
     transition: 0.3s;
 }
 
-.texto a button:hover {
-    color: #FE7920;
-    background-color: transparent;
-    border: 2px solid #FE7920;
-    transition: 0.3s;
-    transform: scale(0.95);
-}
-
 .transportes {
     display: flex;
     flex-direction: column;
@@ -346,7 +338,6 @@ footer p {
 }
 
 .sobrenos span {
-    color: #FE7920;
     font-weight: bold;
 }
 

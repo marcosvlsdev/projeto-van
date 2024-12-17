@@ -12,5 +12,5 @@ function toggleMenu(event) {
   }
 }
 
-hamburguer.addEventListener("click", toggleMenu);
-hamburguer.addEventListener("touchstart", toggleMenu);
+Hamburguer.addEventListener("click", toggleMenu);
+Hamburguer.addEventListener("touchstart", toggleMenu);
