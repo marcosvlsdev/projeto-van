@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    background-color: white;
     height: 80px;
     color: #FE7920;
     padding: 10px;
@@ -81,7 +81,6 @@ header {
 
 .principal {
     background-image: url(img/vanpreta.jpeg);
-    height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center left;
@@ -126,8 +125,8 @@ header {
 
 .transporte {
     max-width: 800px;
-    min-width: 300px;
-    width: 80vw;
+    min-width: 290px;
+    width: 81vw;
     margin: 40px 0;
     height: 500px;
     text-align: center;
